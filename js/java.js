@@ -19,5 +19,12 @@ console.log(eta);
 
 // creo variabile per distanza
 
-const distance = Number(prompt("Inserisci Km"));
-console.log(distance);
+const dist = Number(prompt("Inserisci Km"));
+console.log(dist);
+
+// calcolo prezzo per under 18
+if (eta < 18) {
+  const perc_20 = dist * 0.21 - dist * 0.21 * 0.02;
+  const perc_20_decimal = perc_20.toFixed(2);
+  console.log(perc_20_decimal);
+}
