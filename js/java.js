@@ -27,6 +27,10 @@ if (eta < 18) {
   const perc_20 = dist * 0.21 - dist * 0.21 * 0.02;
   const perc_20_decimal = perc_20.toFixed(2);
   console.log(perc_20_decimal);
+} else if (eta > 64) {
+  const perc_40 = dist * 0.21 - dist * 0.21 * 0.04;
+  const perc_40_decimal = perc_40.toFixed(2);
+  console.log(perc_40_decimal);
 } else {
   const full_price = dist * 0.21;
   const full_price_decimal = full_price.toFixed(2);
