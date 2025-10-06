@@ -15,3 +15,7 @@ Questo richiederà un minimo di ricerca. */
 // creo variabili eta
 
 const eta1 = Number(prompt("Iserisci la tua etá"));
+
+// creo variabile per distanza
+
+const distance = Number(prompt("Inserisci Km"));
