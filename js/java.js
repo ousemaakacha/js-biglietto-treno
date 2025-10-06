@@ -12,6 +12,16 @@ L'output del prezzo finale va messo fuori in forma umana
 (con massimo due decimali, per indicare centesimi sul prezzo). 
 Questo richiederà un minimo di ricerca. */
 
+/*
+TOOLS:
+- creazione const / let
+- calcolo prezzo
+- applicazione scoto under 18
+- applicazione sconto over 65
+- prezzo in decimale
+
+*/
+
 // creo variabili eta
 
 const eta = Number(prompt("Iserisci la tua etá"));
@@ -22,7 +32,7 @@ console.log(eta);
 const dist = Number(prompt("Inserisci Km"));
 console.log(dist);
 
-// calcolo prezzo per under 18
+// calcolo prezzo
 if (eta < 18) {
   const perc_20 = dist * 0.21 - dist * 0.21 * 0.02;
   const perc_20_decimal = perc_20.toFixed(2);
