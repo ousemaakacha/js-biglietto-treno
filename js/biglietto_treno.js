@@ -31,22 +31,26 @@ console.log(eta);
 const dist = Number(prompt("Inserisci Km"));
 console.log(dist);
 
+// creo variabile prezzo al km
+const dist_price = dist * 0.21;
+console.log(dist_price);
+
 // calcolo prezzo
 if (eta < 18) {
   // prezzo scontato under 18
-  const perc_20 = dist * 0.21 - dist * 0.21 * 0.02;
+  const perc_20 = dist_price - dist_price * 0.02;
   // prezzo in decimale
   const perc_20_decimal = perc_20.toFixed(2);
   console.log(perc_20_decimal);
 } else if (eta > 64) {
   // prezzo scontato over 65
-  const perc_40 = dist * 0.21 - dist * 0.21 * 0.04;
+  const perc_40 = dist_price - dist_price * 0.04;
   // prezzo in decimale
   const perc_40_decimal = perc_40.toFixed(2);
   console.log(perc_40_decimal);
 } else {
   // prezzo intero
-  const full_price = dist * 0.21;
+  const full_price = dist_price;
   // prezzo in decimale
   const full_price_decimal = full_price.toFixed(2);
   console.log(full_price);
