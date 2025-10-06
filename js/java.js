@@ -14,8 +14,10 @@ Questo richiederà un minimo di ricerca. */
 
 // creo variabili eta
 
-const eta1 = Number(prompt("Iserisci la tua etá"));
+const eta = Number(prompt("Iserisci la tua etá"));
+console.log(eta);
 
 // creo variabile per distanza
 
 const distance = Number(prompt("Inserisci Km"));
+console.log(distance);
